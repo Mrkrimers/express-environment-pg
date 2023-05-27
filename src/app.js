@@ -6,8 +6,7 @@ const app = express();
 
 app.use(bodyParser.json());
 
-app.use(`/environment`, route)
-
+app.use(`/environment`, route);
 
 app.use((error, req, res, next) => res.send(error.message));
 module.exports = app;
